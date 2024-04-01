@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Weather App</h1>
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+        <!-- Grant Location  -->
+        <div class="weather-container">
+            <div class=" sub-container grant-location-container">
+                <img src="C:\Users\hp\Desktop\WeatherProject\asset\location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get the weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+        <!-- Search form -->
+            <form class="form-container" data-searchForm>
+                <input type="text" placeholder="Search for City." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="C:\Users\hp\Desktop\WeatherProject\asset\search.png" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+        <!-- loding -->
+            <div class=" sub-container loading-container">
+                <img src="C:\Users\hp\Desktop\WeatherProject\asset\loading.gif" width="150" height="150" loading="lazy">
+                <p>Loading</p>
+            </div>
+        <!-- Show Weather info -->
+            <div class=" sub-container user-info-container">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+                <p data-temp></p>
+                <div class="parameter-container">
+                    <div class="parameter">
+                        <img src="C:\Users\hp\Desktop\WeatherProject\asset\wind.png" alt="">
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="C:\Users\hp\Desktop\WeatherProject\asset\humidity.png" alt="">
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="parameter">
+                        <img src="C:\Users\hp\Desktop\WeatherProject\asset\cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+                </div>
+            </div>
+            <div class=" sub-container error-page">
+                <img src="C:\Users\hp\Desktop\WeatherProject\asset\not-found.png" alt="">
+                <p>City is not found</p>
+            </div>
+        </div>
+    </div>
+<script src="file.js"></script>   
+</body>
+</html>
